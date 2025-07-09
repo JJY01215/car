@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>車牌辨識系統</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .video-container {
+            margin: 20px 0;
+        }
+        img {
+            max-width: 100%;
+            border: 2px solid #333;
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>即時車牌辨識系統</h1>
+        <div class="video-container">
+            <img src="{{ url_for('video_feed') }}" alt="即時視訊串流">
+        </div>
+    </div>
+</body>
+</html>
